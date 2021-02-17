@@ -1,0 +1,22 @@
+API Details:
+Auth:
+URL: http://localhost:8000/user/auth
+Method: POST
+INPUT: body-> raw = { "username": "admin@example.com", "password": "admin@123" }
+UseCase: For generating token, username and password hardcoded in congig.yml. You can change how ever you needed.
+
+CreateUser:
+URL: http://localhost:8000/user/create
+Method: POST
+INPUT: body-> raw =  { "email": "Ramayanna120@gmail.com", "password": "1234567" }
+       Header->authorization:Bearer YourGeneratedToken
+
+Get all user:
+URL: http://localhost:8000/users
+Method: GET
+INPUT: Header->authorization:Bearer YourGeneratedToken
+
+Delete User:
+URL: http://localhost:8000/user/5fe55002353c0e448c64128b
+Method: DELETE
+INPUT: Header->authorization:Bearer YourGeneratedToken

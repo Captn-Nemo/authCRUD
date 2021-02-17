@@ -1,0 +1,16 @@
+environment: Development
+port: 8000
+mongo:
+  connection: mongodb://localhost:27017/UserAuth
+method:
+  SERVICE_POST: "POST"
+  SERVICE_GET: "GET"
+  SERVICE_PUT: "PUT"
+  SERVICE_DELETE: "DELETE"
+documentUploadPath: "uploads/"
+SALT: "jebdejwfkewfnn"
+SECRET: "okfkffvmbrerm"
+TokenExpiresIn: "20000s"
+Admin:
+  username: "admin@example.com"
+  password: "admin@123"
